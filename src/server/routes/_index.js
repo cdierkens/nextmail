@@ -11,7 +11,7 @@ const index = {
   handler: async (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
 
-    const emails = getEmails().map(e => e.slice(0, -3));
+    const emails = getEmails().map((e) => e.slice(0, -3));
 
     const str = html`
       <!DOCTYPE html>
@@ -38,7 +38,7 @@ const index = {
           </style>
         </head>
         <body>
-          ${emails.map(email => `
+          ${emails.map((email) => `
             <div class="email">
               <h4>${email}</h4>
               ${renderLinks(email)}

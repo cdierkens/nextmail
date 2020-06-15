@@ -21,7 +21,7 @@ class Renderer {
       : {};
     debug('initialProps: %o', initialProps);
 
-    const props = Object.assign({}, payload, initialProps);
+    const props = { ...payload, ...initialProps };
     debug('props: %o', props);
 
     const subject = typeof Template.getSubject === 'function'
@@ -35,8 +35,6 @@ class Renderer {
       : null;
 
     debug('headers: %s', headers);
-
-    console.log({Template})
 
     const { html } = render(Template(props));
     const text = htmlToText.fromString(html);

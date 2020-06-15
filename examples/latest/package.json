@@ -1,18 +1,11 @@
 {
-  "name": "latest",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "nextmail build",
-    "dev": "nextmail dev",
-    "gen": "node index.js",
-    "send": "nextmail send",
-    "start": "NODE_ENV=production nextmail start"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "axios": "0.19.0",
-    "nextmail": "../..",
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
-  }
+	"name": "latest",
+	"version": "1.0.0",
+	"license": "MIT",
+	"dependencies": {
+		"axios": "0.19.0",
+		"nextmail": "0.4.3",
+		"react": "16.8.6",
+		"react-dom": "16.8.6"
+	}
 }

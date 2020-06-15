@@ -1,17 +1,17 @@
 {
-  "name": "package-consumer",
-  "version": "1.0.0",
-  "description": "Consumes a package that leverages nextmail",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "Sean Connolly",
-  "license": "MIT",
-  "devDependencies": {
-    "jest": "24.7.1"
-  },
-  "dependencies": {
-    "nextmail-package": "file:../package"
-  }
+	"name": "package-consumer",
+	"version": "1.0.0",
+	"description": "Consumes a package that leverages nextmail",
+	"main": "index.js",
+	"author": "Sean Connolly",
+	"license": "MIT",
+	"scripts": {
+		"test": "jest"
+	},
+	"dependencies": {
+		"nextmail-package": "1.0.0" 
+	},
+	"devDependencies": {
+		"jest": "24.7.1"
+	}
 }

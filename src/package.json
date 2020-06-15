@@ -1,0 +1,67 @@
+{
+  "name": "nextmail",
+  "version": "0.4.3",
+  "description": "Craft emails in React and MJML. Inspired by Next.js.",
+  "keywords": [
+    "react",
+    "nextjs",
+    "email",
+    "mjml"
+  ],
+  "main": "index.js",
+  "bin": {
+    "nextmail": "./bin/nextmail.js"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "lint": "eslint --ext .js .",
+    "test": "jest",
+    "test:all": "jest && lerna run test --stream"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldenshun/nextmail.git"
+  },
+  "author": "Sean Connolly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldenshun/nextmail/issues"
+  },
+  "homepage": "https://github.com/goldenshun/nextmail#readme",
+  "dependencies": {
+    "@babel/cli": "7.10.1",
+    "@babel/core": "7.10.2",
+    "@babel/plugin-transform-runtime": "7.10.1",
+    "@babel/preset-env": "7.10.2",
+    "@babel/preset-react": "7.10.1",
+    "@babel/runtime": "7.10.2",
+    "babel-jest": "^26.0.1",
+    "common-tags": "1.8.0",
+    "debug": "4.1.1",
+    "decache": "4.6.0",
+    "html-to-text": "5.1.1",
+    "mjml": "4.6.3",
+    "mjml-react": "1.0.57",
+    "nodemailer": "6.4.8",
+    "qs": "6.9.4",
+    "require-context": "1.1.0",
+    "route-parser": "0.0.5",
+    "yargs": "13.2.2"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "jest": "^26.0.1",
+    "lerna": "^3.22.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  }
+}
